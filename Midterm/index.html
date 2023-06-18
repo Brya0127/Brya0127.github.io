@@ -4,27 +4,80 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Starfish</title>
-  <img src="Images/lone-starfish-wide.jpg" alt="wide banner image of a starfish">
-  <h1>Lone Starfish</h1>
+  <img src="Images/lone-starfish-wide.jpg" style="width: 100%" alt="wide banner image of a starfish">
+  <div class="centered">
+    <h1>Lone Starfish</h1>
+  </div>
+  
   <link rel="stylesheet" href="CSS/main.css">
 </head>
-
+<style>
+  .content {
+    max-width: 960px;
+    margin: auto;
+  }
+  </style>
+  
+<body>
+  <div class="content">
+    <!-- Page content -->
+<section>
 <header>
-  <nav>      
-      <a href="index.html">Home</a>
-      <a href="notes.html">Story</a>
-      <a href="contact.html">Contact</a>
+  <nav>
+  <div class="row">
+    <div class="column"><a href="index.html">Home</a></div>
+    <div class="column"><a href="notes.html">Story</a></div>
+    <div class="column"><a href="contact.html">Contact</a></div>
+  </div>
   </nav>
-  <h1 class="site-title"> Life of a Starfish </h1>
-</header>
 
+  <h2 class="site-title"> Life of a Starfish </h2>
+</header>
+<style>
+  .bottom {
+    text-align: left;
+    margin: 50px;
+    border: 3px #000;
+    border-style: double;
+  }
+  .facts {
+    text-align: left;
+    margin: 50px;
+  }
+  body {
+    margin: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    color: rgb(255, 255, 255);
+  }
+
+  img {
+    width:auto;
+    float: left;
+    margin: 5px;
+  }
+
+  p {
+    text-align: justify;
+    font-size: 25px;
+    margin: 25px;;
+  }
+</style>
 <main>
 <article>
-  <img id="my-image" src="Images/lone-starfish.jpg" alt="A photo of a starfish.">
+  <div class="square">
+    <div>
+      <img id="my-image" src="Images/lone-starfish.jpg" width="250" height="250" alt="A photo of a starfish.">
+    </div>
+  
 <p>
   Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.
 </p>
 </article>
+<div class="facts">
+  <div>
 <article>
   <h2>Facts About Starfish</h2>
   <p>
@@ -36,9 +89,12 @@
     </ul>
   </p>
 </article>
+<div class="bottom">
+  <div>
 <article>
   <h2>Contact To Learn More</h2>
   <form>
+    <form action="/action_page.php">
     <label for="name">Your Name:</label><br>
     <input type="text" id="name" name="name"><br>
     <label for="email">Your Email:</label><br>
@@ -57,11 +113,9 @@
     </form>
 
 </article>
-<form>
-
-
-</form>
-<body>
-  
+</div>
+</section> 
+<footer>Lone Starfish &copy;</footer>
+</div> 
 </body>
 </html>

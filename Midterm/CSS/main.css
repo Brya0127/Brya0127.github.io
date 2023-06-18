@@ -1,5 +1,45 @@
-body {
-  background-color:rgb(157, 228, 209);
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.column {
+  float: left;
+  width: 33.33%;
+  font-size: 24pt;
+  border-style:double;
+  border: 2px #ffffff;
+}
 
+.centered {
+  font-size: 36pt;
+  color: #ffffff;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.bottom {
+  justify-content: left;
+  
+}
+
+body {
+  background-color: #aad4cf;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  hyphens: auto;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.content {
+  background-color: #d4e9e7;
+}
+footer {
+  margin-right: 12px;
+  display: grid;
+  justify-content: right;
+  align-content: right;
 }
