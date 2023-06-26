@@ -3,25 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/main.css">
+</head>
+
+<body>
   <title>Starfish</title>
-  <img src="Images/lone-starfish-wide.jpg" style="width: 100%" alt="wide banner image of a starfish">
+  <img src="Images/lone-starfish-wide.jpg" style="width: 960px" alt="wide banner image of a starfish">
   <div class="centered">
     <h1>Lone Starfish</h1>
   </div>
-  
-  <link rel="stylesheet" href="CSS/main.css">
-</head>
-<style>
-  .content {
-    max-width: 960px;
-    margin: auto;
-  }
-  </style>
-  
-<body>
   <div class="content">
     <!-- Page content -->
 <section>
+
 <header>
   <nav>
   <div class="row">
@@ -29,42 +23,18 @@
     <div class="column"><a href="notes.html">Story</a></div>
     <div class="column"><a href="contact.html">Contact</a></div>
   </div>
+  <!-- <div class="navi"> -->
+  <!-- <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="story.html">Story</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul> -->
+  <!-- </div> -->
   </nav>
 
   <h2 class="site-title"> Life of a Starfish </h2>
 </header>
-<style>
-  .bottom {
-    text-align: left;
-    margin: 50px;
-    border: 3px #000;
-    border-style: double;
-  }
-  .facts {
-    text-align: left;
-    margin: 50px;
-  }
-  body {
-    margin: 20px;
-    text-align: center;
-  }
 
-  h1 {
-    color: rgb(255, 255, 255);
-  }
-
-  img {
-    width:auto;
-    float: left;
-    margin: 5px;
-  }
-
-  p {
-    text-align: justify;
-    font-size: 25px;
-    margin: 25px;;
-  }
-</style>
 <main>
 <article>
   <div class="square">
@@ -77,8 +47,8 @@
 </p>
 </article>
 <div class="facts">
-  <div>
-<article>
+  <!-- <div> this was a mistake-->
+<article id="fax">
   <h2>Facts About Starfish</h2>
   <p>
     <ul>
@@ -88,19 +58,19 @@
       <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
     </ul>
   </p>
+
 </article>
 <div class="bottom">
-  <div>
-<article>
+<article class="contact">
   <h2>Contact To Learn More</h2>
   <form>
-    <form action="/action_page.php">
     <label for="name">Your Name:</label><br>
-    <input type="text" id="name" name="name"><br>
+    <textarea id="name" name="name"> </textarea><br>
     <label for="email">Your Email:</label><br>
-    <input type="text" id="email" name="email"><br>
+    <textarea id="email" name="email"> </textarea><br>
     <label for="message">Your Message:</label><br>
-    <input type="text" id="message" name="message">
+    <textarea id="message" name="message"> </textarea>
+    <!-- <input type="text" id="message" name="message"> -->
     
     <p>Would you like to meet the starfish?:</p>
     <input type="radio" id="Yes" name="fav_language" value="Yes">
@@ -109,13 +79,15 @@
     <label for="css">No</label><br>
     <input type="radio" id="Maybe" name="fav_language" value="Maybe">
     <label for="css">Maybe</label><br>
-    <input type="submit" value="Send">
+    <button class="submit" type="button">Send</button>
     </form>
-
+  </div>
 </article>
-</div>
-</section> 
-<footer>Lone Starfish &copy;</footer>
+
+</main> 
+<footer>
+  <p>Lone Starfish &copy; </p>
+</footer>
 </div> 
 </body>
 </html>

@@ -1,13 +1,95 @@
+
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.site-title {
+  padding-left: 10px;
+}
+
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #d4e9e7;
+}
+
+.bottom {
+  text-align: left;
+  margin: 50px;
+  border: 3px #000;
+  border-style: double;
+}
+
+.facts {
+  text-align: left;
+  margin: 50px;
+}
+body {
+  line-height: 1.4;
+  margin: 20px;
+  text-align: center;
+}
+
+ /* Might be able to delete from here */
+h1 {
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  text-align: left;
+}
+
+.fax {
+  text-align: justify;
+}
+/* to here */
+
+img {
+  width:auto;
+  float: left;
+  margin: 5px;
+}
+
+/* can delete this because only 2 lines of text should follow the picture */
+/* p {
+  text-align: justify;
+  font-size: 25px;
+  margin: 25px;;
+} */
+
 .column {
   float: left;
   width: 33.33%;
   font-size: 24pt;
-  border-style:double;
-  border: 2px #ffffff;
+  border-left: 2px;
+  border-style: solid, black;
 }
 
+.contact {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.submit {
+  background-color: transparent;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+/* delete these */
+#button1 {background-color: #ffffff;}
+#button2 {background-color: #ffffff;} 
+#button3 {background-color: #ffffff;}
+
 .centered {
-  font-size: 36pt;
+  font-size: 24pt;
   color: #ffffff;
   position: absolute;
   top: 30%;
@@ -15,16 +97,45 @@
   transform: translate(-50%, -50%);
 }
 
-/* Clear floats after the columns */
+/* is this doing anything?*/
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-.bottom {
-  justify-content: left;
-  
+/* ul li {
+  background-color: transparent;
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+} */
+
+.navi a {
+  display: inline-block;
+  padding: 20px;
 }
+
+.bottom {
+  margin: -40px;
+  margin-top: 10px;
+  justify-content: left;
+}
+
+textarea {
+  width: auto;
+  resize: none;
+}
+#name {
+  width: 900px;
+}
+#email {
+  width: 900px;
+}
+#message {
+  width: 900px;
+  height: 150px;
+}
+
 
 body {
   background-color: #aad4cf;
@@ -34,9 +145,7 @@ body {
   justify-content: center;
   align-content: center;
 }
-.content {
-  background-color: #d4e9e7;
-}
+
 footer {
   margin-right: 12px;
   display: grid;
