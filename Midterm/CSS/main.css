@@ -25,7 +25,7 @@ html {
 
 .facts {
   text-align: left;
-  margin: 50px;
+  margin: 10px;
 }
 body {
   line-height: 1.4;
@@ -83,10 +83,7 @@ img {
   padding-left: 10px;
 }
 
-/* delete these */
-#button1 {background-color: #ffffff;}
-#button2 {background-color: #ffffff;} 
-#button3 {background-color: #ffffff;}
+
 
 .centered {
   font-size: 24pt;
@@ -110,13 +107,44 @@ img {
   text-align: center;
 } */
 
+.factoids {
+  margin-left: -20px;
+}
+
+#my-image {
+  padding-left: 10px;
+  padding-right: 20PX;
+}
+
+.radioButton {
+
+  margin-left: 10px;
+  padding-left: -20px;
+  display: inline-block;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.intro p {
+  text-align: left;
+  padding-left: 20px;
+}
+
+#Yes {
+  margin-left: -40px;
+}
+
 .navi a {
   display: inline-block;
   padding: 20px;
 }
-
+.submit {
+  margin-left: 5px;
+  display: flex;
+}
 .bottom {
-  margin: -40px;
+  margin: 40px;
   margin-top: 10px;
   justify-content: left;
 }
@@ -126,17 +154,19 @@ textarea {
   resize: none;
 }
 #name {
-  width: 900px;
+  width: 850px;
 }
 #email {
-  width: 900px;
+  width: 850px;
 }
 #message {
-  width: 900px;
+  width: 850px;
   height: 150px;
 }
 
-
+ul li a {
+  display: inline;
+}
 body {
   background-color: #aad4cf;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
