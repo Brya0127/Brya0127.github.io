@@ -10,81 +10,6 @@ html {
   padding-left: 10px;
 }
 
-.content {
-  max-width: 960px;
-  margin: 0 auto;
-  background-color: #d4e9e7;
-}
-
-.bottom {
-  text-align: left;
-  margin: 50px;
-  border: 3px #000;
-  border-style: double;
-}
-
-.facts {
-  text-align: left;
-  margin: 10px;
-}
-body {
-  line-height: 1.4;
-  margin: 20px;
-  text-align: center;
-}
-
- /* Might be able to delete from here */
-h1 {
-  color: rgb(255, 255, 255);
-}
-
-h2 {
-  text-align: left;
-}
-
-.fax {
-  text-align: justify;
-}
-/* to here */
-
-img {
-  width:auto;
-  float: left;
-  margin: 5px;
-}
-
-/* can delete this because only 2 lines of text should follow the picture */
-/* p {
-  text-align: justify;
-  font-size: 25px;
-  margin: 25px;;
-} */
-
-.column {
-  float: left;
-  width: 33.33%;
-  font-size: 24pt;
-  border-left: 2px;
-  border-style: solid, black;
-}
-
-.contact {
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-}
-
-.submit {
-  background-color: transparent;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-}
-
-
-
 .centered {
   font-size: 24pt;
   color: #ffffff;
@@ -94,79 +19,12 @@ img {
   transform: translate(-50%, -50%);
 }
 
-/* is this doing anything?*/
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* ul li {
-  background-color: transparent;
-  display: inline-block;
-  width: 33%;
-  text-align: center;
-} */
-
-.factoids {
-  margin-left: -20px;
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #d4e9e7;
 }
 
-#my-image {
-  padding-left: 10px;
-  padding-right: 20PX;
-}
-
-.radioButton {
-
-  margin-left: 10px;
-  padding-left: -20px;
-  display: inline-block;
-}
-a {
-  color: black;
-  text-decoration: none;
-}
-.intro p {
-  text-align: left;
-  padding-left: 20px;
-}
-
-#Yes {
-  margin-left: -40px;
-}
-
-.navi a {
-  display: inline-block;
-  padding: 20px;
-}
-.submit {
-  margin-left: 5px;
-  display: flex;
-}
-.bottom {
-  margin: 40px;
-  margin-top: 10px;
-  justify-content: left;
-}
-
-textarea {
-  width: auto;
-  resize: none;
-}
-#name {
-  width: 850px;
-}
-#email {
-  width: 850px;
-}
-#message {
-  width: 850px;
-  height: 150px;
-}
-
-ul li a {
-  display: inline;
-}
 body {
   background-color: #aad4cf;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -174,6 +32,105 @@ body {
   display: grid;
   justify-content: center;
   align-content: center;
+  line-height: 1.4;
+  margin: 20px;
+  text-align: center;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  font-size: 24pt;
+  border-left: 2px;
+  border-style: solid black;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+h2 {
+  text-align: left;
+}
+
+img {
+  width:auto;
+  float: left;
+  margin: 5px;
+}
+
+#my-image {
+  padding-left: 10px;
+  padding-right: 20PX;
+}
+
+.intro p {
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.facts {
+  text-align: left;
+  margin: 10px;
+}
+
+.bottom {
+  text-align: left;
+  margin: 50px;
+  border: 3px #000;
+  border-style: double;
+  margin: 40px;
+  margin-top: 10px;
+  justify-content: left;
+}
+
+ul li a {
+  display: inline;
+}
+
+.contact {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.radioButton {
+
+  margin-left: 10px;
+  display: inline-block;
+}
+
+#Yes {
+  margin-left: -40px;
+}
+
+.submit {
+  background-color: transparent;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+textarea {
+  width: auto;
+  resize: none;
+}
+
+#name {
+  width: 850px;
+}
+
+#email {
+  width: 850px;
+}
+
+#message {
+  width: 850px;
+  height: 150px;
 }
 
 footer {
