@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+}
+header {
+  background-color: #222222;
+}
+
+header ul {
+  display: flex;
+}
+
+
+
+#home-button {
+  background-color: #c68d00;
+}
+
+.banner {
+  height: 
+}
+
+
+
+.hero-section-home {
+    background-image: url("main-banner.jpg");
+    background-position: 50%;
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.top {
+background-color: #ffe6ac;
+position: relative;
+
+}
+
+.banner-overlay {
+  background-color: #000000a0;
+  height: 550px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50% );
+  /* position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.about {
+  background-color: #ffe6ac;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* grid-template-columns: repeat(2, 1fr); */
+  /* grid-template-areas: 
+  "pingpong about"; */
+  /* grid-template-rows: 0.5fr; */
+  /* padding: 15px; */
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.pingpong  {
+  max-width: 100%;
+  /* width: auto */
+  grid-column: 1 / 2
+  /* grid-area: pingpong; */
+  /* width: 48%;
+  float: left; */
+}
+
+.about-text {
+  padding: 1em;
+  grid-column: 2 / 3;
+}
+
+/* .about h1 {
+  grid-column: 2 / 3;
+}
+.about p {
+  grid-column: 2 / 3;
+} */
+
+.banner {
+  width: 100%;
+}
+
+.service {
+  display: grid;
+  grid-template-columns: repeat(6,15%);
+  grid-template-rows: minmax(1fr, auto);
+  grid-gap: 1em;
+  padding: 15px;
+  margin-left: 5em;
+  margin-right: 5em;
+  /* width: 88%; */
+  /* justify-self: center; */
+  /* margin: 8%; */
+  
+  /* grid-template-rows: repeat(4, 1fr); */
+  /* grid-template-areas: 
+  "tran tran tran mark mark mark"
+  "vid vid web web print print"; */
+}
+
+  /* One of the easiest ways of centering the content of grid items is using Flexbox. Set the display to "grid" for the grid container, and "flex" for grid items. Then, add the align-items and justify-content properties, both with the "center" value, to grid items. */
+
+  .servcont {
+  margin: 15px;
+}
+
+.transform {
+  background-color: #ffe6ac;
+  grid-column: 1 / span 3;
+}
+
+
+.transform img {
+  width: 100%;
+}
+
+.marketing {
+  background-color: #ffe6ac;
+  grid-column: 4 / 7;
+}
+
+.marketing img {
+  width: 100%;
+}
+
+.vidpro {
+  background-color: #ffe6ac;
+  grid-column: 1 / span 2;
+}
+
+.vidpro img {
+  width: 100%;
+}
+
+.webdev {
+  background-color: #ffe6ac;
+  grid-column: 3 / 5;
+
+}
+
+.webdev img {
+  width: 100%;
+}
+
+.print {
+  justify-content: center;
+  background-color: #ffe6ac;
+  grid-column: 5 / 7;
+
+}
+
+.print img {
+  width: 100%;
+}
+
+.servbut {
+  background-color: #000000; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  width: 100%;
+}
+/* retrying grid because frustrated */
+
+
+
+
+
+/* .mid {
+  background-color: #ffe6ac;
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+  grid-template-rows: 320px 320px;
+  grid-template-areas:
+  "pic1 info1"
+  "info2 pic2";
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.mid .johnpic {
+  max-width: 100%;
+  order: 1;
+
+}
+
+.johninfo {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  margin: 15px;
+}
+
+.bobpic {
+  max-width: 100%;
+  grid-row: -1 / -2;
+  grid-column: -1 / -2;
+}
+
+.bobinfo {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  margin: 15px;
+} */

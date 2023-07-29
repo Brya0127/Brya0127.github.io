@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+/* .content {
+  max-width: 960px;
+} */
+
+.grid {
+  display: grid;
+  grid-template-rows: repeat(4 ,1fr);
+}
+
+.fable {
+  max-width: 960px;
+  max-height: 600px;
+}
