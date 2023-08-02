@@ -1,0 +1,336 @@
+* {
+  box-sizing: border-box;
+}
+header {
+  height: 150px;
+  background-color: #222222;
+  /* display: flex; */
+}
+
+.hero-navi {
+  font-size: 2em;
+  display: flex;
+  /* trying to figure out how to stretch navigation div to fit content width */
+  
+  justify-content: center;
+  align-items: stretch;
+  padding-top: 50px;
+  margin-left: 1em;
+  /* padding-left: 250px; */
+  width: 1000px;
+}
+
+header span { 
+  font-size: 1.5rem;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding-right: 1em;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+header nav ul a:link, header nav ul a:visited {
+  color: #c68d00;
+  text-decoration: none;
+}
+
+header nav ul a:hover, header nav ul a:active {
+  /* font-size: large; */
+  color: #ffffff;
+  /* text-decoration: underline; */
+}
+
+#home-button {
+  color: #000000;
+  background-color: #c68d00;
+}
+
+.banner {
+  /* height: 100px; */
+}
+
+nav ul li a{
+  display: flex;
+  flex-wrap: wrap;
+  color: #c68d00;
+  text-decoration: none;
+}
+
+
+
+.hero-section-home {
+  height: 600px;
+    background-image: url("https://brya0127.github.io/final-project/images/main-banner.jpg");
+    background-position: 50%;
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.top {
+background-color: #ffe6ac;
+position: relative;
+
+}
+
+.banner-overlay {
+  background-color: #000000a0;
+  width: 1350px;
+  height: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -20% );
+  /* position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.banner-overlay h1 {
+  font-size: 110px;
+  color: white;
+  margin: 15px;
+  /* padding-left: 15px; */
+}
+
+.banner-overlay p {
+  color: white;
+  padding: 15px;
+}
+
+.connect {
+  background-color: #c68d00; /* Green */
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  width: 15%;
+  margin-left: 15px;
+}
+
+.abt {
+  background-color: #ffe6ac;
+}
+.about {
+  background-color: #ffe6ac;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* grid-template-columns: repeat(2, 1fr); */
+  /* grid-template-areas: 
+  "pingpong about"; */
+  /* grid-template-rows: 0.5fr; */
+  /* padding: 15px; */
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.pingpong  {
+  max-width: 100%;
+  /* width: auto */
+  grid-column: 1 / 2
+  /* grid-area: pingpong; */
+  /* width: 48%;
+  float: left; */
+}
+
+.about-text {
+  padding: 1em;
+  grid-column: 2 / 3;
+}
+
+/* .about h1 {
+  grid-column: 2 / 3;
+}
+.about p {
+  grid-column: 2 / 3;
+} */
+
+.banner {
+  width: 100%;
+}
+
+.service {
+  display: grid;
+  grid-template-columns: repeat(6,15%);
+  grid-template-rows: minmax(1fr, auto);
+  grid-gap: 1em;
+  padding: 15px;
+  margin-left: 5em;
+  margin-right: 5em;
+  /* width: 88%; */
+  /* justify-self: center; */
+  /* margin: 8%; */
+  
+  /* grid-template-rows: repeat(4, 1fr); */
+  /* grid-template-areas: 
+  "tran tran tran mark mark mark"
+  "vid vid web web print print"; */
+}
+
+  /* One of the easiest ways of centering the content of grid items is using Flexbox. Set the display to "grid" for the grid container, and "flex" for grid items. Then, add the align-items and justify-content properties, both with the "center" value, to grid items. */
+
+  .servcont {
+  margin: 15px;
+}
+
+.transform {
+  background-color: #ffe6ac;
+  grid-column: 1 / span 3;
+}
+
+
+.transform img {
+  width: 100%;
+}
+
+.marketing {
+  background-color: #ffe6ac;
+  grid-column: 4 / 7;
+}
+
+.marketing img {
+  width: 100%;
+}
+
+.vidpro {
+  background-color: #ffe6ac;
+  grid-column: 1 / span 2;
+}
+
+.vidpro img {
+  width: 100%;
+}
+
+.webdev {
+  background-color: #ffe6ac;
+  grid-column: 3 / 5;
+
+}
+
+.webdev img {
+  width: 100%;
+}
+
+.print {
+  justify-content: center;
+  background-color: #ffe6ac;
+  grid-column: 5 / 7;
+
+}
+
+.print img {
+  width: 100%;
+}
+
+.servbut {
+  background-color: #000000; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 60px;
+  align-items: end;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  width: 100%;
+}
+/* retrying grid because frustrated */
+
+.servbut a:link, header nav ul a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.servbut  a:hover, a:active {
+  /* font-size: large; */
+  color: #ffffff;
+  /* text-decoration: underline; */
+}
+
+.vision {
+  height: 400px;
+  background-image: url(https://brya0127.github.io/final-project/images/vision.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  color: white;
+  align-content: center;
+  justify-content: center;
+}
+
+.vision img {
+  min-width: 100%;
+}
+
+.vision {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-content: center; */
+  
+  
+}
+
+.vision-text {
+  margin: 80px;
+}
+
+.images {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+
+.mid {
+  background-color: #ffe6ac;
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+  grid-template-rows: 320px 320px;
+  grid-template-areas:
+  "pic1 info1"
+  "info2 pic2";
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.johnpic {
+  grid-area: pic1;
+
+}
+
+.johninfo {
+  padding: 1em;
+  grid-area: info1;
+}
+
+.bobpic {
+ grid-area: pic2;
+}
+
+.bobinfo {
+  padding: 1em;
+  grid-area: info2;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+  "contact location"
+  "hours hours";
+  align-items: center;
+  margin-left: 80px;
+  width: 85%;
+}
+
+  table, th, td {
+    justify-content: center;
+    grid-column: 1 / 3;
+    border: 1px solid;
+  }

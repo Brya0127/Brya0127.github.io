@@ -1,67 +1,31 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
 * {
   box-sizing: border-box;
 }
-header {
-  height: 150px;
+/* add open sans google font  */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+header{
   background-color: #222222;
-  /* display: flex; */
-}
-
-.hero-navi {
-  font-size: 2em;
   display: flex;
-  
+  width: 100%;
   justify-content: center;
-  align-items: stretch;
-  padding-top: 50px;
-  margin-left: 1em;
-  /* padding-left: 250px; */
-  width: 1000px;
 }
-
-header span { 
-  font-size: 1.5rem;
-  }
-  
-  header nav ul {
-    list-style: none;
-    padding-right: 1em;
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-  }
-
-header nav ul a:link, header nav ul a:visited {
-  color: #c68d00;
-  text-decoration: none;
+li {
+  width: 100%;
 }
-
-header nav ul a:hover, header nav ul a:active {
-  /* font-size: large; */
-  color: #ffffff;
-  /* text-decoration: underline; */
-}
-
-#home-button {
-  color: #000000;
-  background-color: #c68d00;
-}
-
-.banner {
-  height: 
-}
-
-nav ul li a{
+ul{
   display: flex;
   flex-wrap: wrap;
-  color: #c68d00;
-  text-decoration: none;
 }
-
+/* searchbar should be flex too  */
 
 
 .hero-section-home {
-  height: 600px;
     background-image: url("https://brya0127.github.io/final-project/images/main-banner.jpg");
     background-position: 50%;
     background-size: cover;
@@ -69,121 +33,117 @@ nav ul li a{
     padding-bottom: 60px;
 }
 
-.top {
-background-color: #ffe6ac;
-position: relative;
-
-}
-
 .banner-overlay {
-  background-color: #000000a0;
-  width: 1350px;
-  height: 450px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate( -50%, -20% );
-  /* position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
+  background-color: #00000070;
 }
 
 .banner-overlay h1 {
-  font-size: 110px;
   color: white;
-  margin: 15px;
-  /* padding-left: 15px; */
+  font-size: 125px;
+}
+
+.banner-overlay h1 {
+  color: white;
+  margin: 20px;
 }
 
 .banner-overlay p {
   color: white;
-  padding: 15px;
 }
 
 .connect {
-  background-color: #c68d00; /* Green */
+  color: black;
+  background-color: #c68d00;
+  font-size: 2em;
+  padding: 1em;
   border: none;
-  color: rgb(0, 0, 0);
-  padding: 15px 60px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 18px;
-  width: 15%;
-  margin-left: 15px;
+  margin: 20px;
 }
 
-.abt {
-  background-color: #ffe6ac;
-}
 .about {
-  background-color: #ffe6ac;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  /* grid-template-columns: repeat(2, 1fr); */
-  /* grid-template-areas: 
-  "pingpong about"; */
-  /* grid-template-rows: 0.5fr; */
-  /* padding: 15px; */
-  margin-left: 5em;
-  margin-right: 5em;
+  object-fit: contain;
 }
 
-.pingpong  {
-  max-width: 100%;
-  /* width: auto */
-  grid-column: 1 / 2
-  /* grid-area: pingpong; */
-  /* width: 48%;
-  float: left; */
+.about img {
+  width: 100%;
+  padding: 2em;
 }
 
 .about-text {
-  padding: 1em;
-  grid-column: 2 / 3;
+  padding: 2em;
 }
 
-/* .about h1 {
-  grid-column: 2 / 3;
+h1 h2 h3 {
+  font-weight: bold;
 }
-.about p {
-  grid-column: 2 / 3;
-} */
 
-.banner {
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+p {
+  font-size: 24pt;
+}
+
+.images {
+  object-fit: cover;
+  height: 100%;
   width: 100%;
+}
+
+.servcont {
+  max-width: 100%;
+  margin: 0, auto;
 }
 
 .service {
   display: grid;
-  grid-template-columns: repeat(6,15%);
-  grid-template-rows: minmax(1fr, auto);
-  grid-gap: 1em;
-  padding: 15px;
-  margin-left: 5em;
-  margin-right: 5em;
-  /* width: 88%; */
-  /* justify-self: center; */
-  /* margin: 8%; */
-  
-  /* grid-template-rows: repeat(4, 1fr); */
-  /* grid-template-areas: 
-  "tran tran tran mark mark mark"
-  "vid vid web web print print"; */
+  grid-template-columns: 1fr;
+  grid-template-rows: ;
+  align-content: center;
 }
 
-  /* One of the easiest ways of centering the content of grid items is using Flexbox. Set the display to "grid" for the grid container, and "flex" for grid items. Then, add the align-items and justify-content properties, both with the "center" value, to grid items. */
+.servbut {
+  background-color: #000000; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 60px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 10px;
+}
 
-  .servcont {
-  margin: 15px;
+.servbut a:link, header nav ul a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.about {
+  background-color: #ffe6ac;
+}
+
+.servcont {
+  padding: 2em;
+}
+
+.servcont p {
+  margin-top: 0.5em;
+}
+
+.servbut {
+  padding: 1em;
 }
 
 .transform {
   background-color: #ffe6ac;
-  grid-column: 1 / span 3;
+  margin: 1em;
+  object-fit: cover;
 }
-
 
 .transform img {
   width: 100%;
@@ -191,7 +151,7 @@ position: relative;
 
 .marketing {
   background-color: #ffe6ac;
-  grid-column: 4 / 7;
+  margin: 1em;
 }
 
 .marketing img {
@@ -200,7 +160,7 @@ position: relative;
 
 .vidpro {
   background-color: #ffe6ac;
-  grid-column: 1 / span 2;
+  margin: 1em;
 }
 
 .vidpro img {
@@ -209,8 +169,7 @@ position: relative;
 
 .webdev {
   background-color: #ffe6ac;
-  grid-column: 3 / 5;
-
+  margin: 1em;
 }
 
 .webdev img {
@@ -218,65 +177,37 @@ position: relative;
 }
 
 .print {
-  justify-content: center;
   background-color: #ffe6ac;
-  grid-column: 5 / 7;
-
+  margin: 1em;
 }
 
 .print img {
   width: 100%;
 }
 
-.servbut {
-  background-color: #000000; /* Green */
-  border: none;
+.vision {
+  background-image: url(../images/vision.jpg);
+  background-repeat: no-repeat;
   color: white;
+  background-position: center;
+  background-size: cover;
+  /* align-content: center;
+  justify-content: center; */
+}
+.vision-text {
+  padding: 3em;
+}
+.vision-text p {
+  padding: 1em;
+}
+.learn {
+  color: white;
+  background-color: #142338;
+  border: 2px solid #c68d00;
   padding: 15px 60px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  width: 100%;
-}
-/* retrying grid because frustrated */
-
-
-
-
-
-/* .mid {
-  background-color: #ffe6ac;
-  display: grid;
-  grid-template-columns: repeat(2,50%);
-  grid-template-rows: 320px 320px;
-  grid-template-areas:
-  "pic1 info1"
-  "info2 pic2";
-  margin-left: 5em;
-  margin-right: 5em;
+  
 }
 
-.mid .johnpic {
-  max-width: 100%;
-  order: 1;
-
+.team {
+  display: flex;
 }
-
-.johninfo {
-  grid-row: 1 / 2;
-  grid-column: 2 / 3;
-  margin: 15px;
-}
-
-.bobpic {
-  max-width: 100%;
-  grid-row: -1 / -2;
-  grid-column: -1 / -2;
-}
-
-.bobinfo {
-  grid-row: 2 / 3;
-  grid-column: 1 / 2;
-  margin: 15px;
-} */

@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <header>
     <div class="hero-navi">
+      <!-- trying to figure out how to make this navigation div fill width -->
     <img src="images/logo.png" alt="Three white stars on an orange background.">
     <nav>
       <ul>
@@ -18,24 +20,25 @@
         <li><a href="team.html">Team</a></li>
         <li><a href="contact.">Contact</a></li>
       </ul>
-    
     </nav>
-    <input type="text" placeholder="Search...">
+    <input type="text" placeholder="Search..."> 
+    
     </div>
     
 
   </header>
 
   <main>
-    <div class="">
+    <div class="content">
     <section class="hero-section-home">
       <!-- <img class="banner" src="images/main-banner.jpg" alt="Interior of an open concept office space"> -->
       <div class="banner-overlay">
         <h1>Welcome to Three Star Media</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus explicabo tempore eligendi architecto libero quaerat magnam sit cumque et commodi iusto in exercitationem, similique culpa aspernatur ipsum. Quis, sunt dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sapiente nihil reiciendis architecto facilis quam fuga aliquam, laboriosam nisi! Beatae atque libero placeat alias maxime expedita assumenda praesentium perferendis accusamus.</p>
         <button class="connect">Connect With Us</button>
-    </div>
+      </div>
     </section>
+
     <div class="abt">
     <section class="about">
     <img class="pingpong" src="images/about-us.jpg" alt="Shot of a ping-pong table.">
@@ -58,7 +61,7 @@
             <h2>Digital Transformation</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex velit architecto esse? Laboriosam tempora, animi itaque quibusdam fugiat, ipsa impedit maiores ipsum illum qui modi voluptate blanditiis laborum quasi omnis.</p>
             <div class="">
-              <button class="servbut"> <a href="digitran.html">Digital Plans</a></button>
+              <button class="servbut">Digital Plans</button>
             </div>
           </div>
         </div>
@@ -69,7 +72,7 @@
             <h2>Marketing</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, fugit enim non mollitia magnam cupiditate ea facilis asperiores recusandae vitae impedit quam debitis nemo nesciunt ullam ducimus magni corrupti officia?</p>
             <div class="">
-              <button class="servbut"> <a href="markplan.html"> Marketing Plans</a></button>
+              <button class="servbut">Marketing Plans</button>
             </div>
           </div>
         </div>
@@ -80,7 +83,7 @@
             <h2>Video Production</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, ut? Similique necessitatibus quibusdam eum expedita aut, voluptatem eos sint. Aspernatur similique voluptates reprehenderit in deserunt assumenda cum aliquid facere sint!</p>
             <div>
-              <button class="servbut"> <a href="vidpro.html"> Video Plans</a></button>
+              <button class="servbut">Video Plans</button>
             </div>
           </div>
         </div>
@@ -91,7 +94,7 @@
             <h2>Web Development</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem voluptatum pariatur fuga adipisci qui officia ea ullam a nihil earum perspiciatis voluptates at hic excepturi, optio explicabo minima? Rerum, non?</p>
             <div>
-              <button class="servbut"> <a href="webdev.html"> Web Plans</a></button>
+              <button class="servbut">Web Plans</button>
             </div>
           </div>
         </div>
@@ -101,41 +104,43 @@
             <h2>Print</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat ea eius, nemo, soluta expedita fugit a dolores delectus cumque eaque voluptate ducimus magnam perferendis blanditiis ad laudantium impedit odit quasi.</p>
             <div>
-              <button class="servbut"> <a href="print.html"> Print Plans</a></button>
+              <button class="servbut">Print Plans</button>
             </div>
+          </div>
         </div>
     
     </section>
     
-    <section>
-      <img src="images/vision.jpg" alt="A fleet of five origami boats resting on a table in a V formation, sailing toward the camera.">
-      <h2>Our Vision</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In mollitia fugiat ad dolores quasi doloremque at voluptatibus incidunt quisquam maiores, et neque dignissimos reiciendis perspiciatis magni consequuntur, recusandae, eveniet quis?</p>
-      <button>Learn More</button>
-
+    <section class="vision">
+      <div class="vision-text">
+        <h2>Our Vision</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In mollitia fugiat ad dolores quasi doloremque at voluptatibus incidunt quisquam maiores, et neque dignissimos reiciendis perspiciatis magni consequuntur, recusandae, eveniet quis?</p>
+        <button class="learn">Learn More</button>
+      </div>
     </section>
+
     <h1>Our Team</h1>
     <!-- redoing grid because im frustrated and dont know whats wrong -->
 
-    <section class="mid">
+    <section class="team">
       
-      
-        <img class="johnpic" src="images/john.jpg" alt="Image of a black man in a pink and blue stripped shirt making a funny face while standing against a graffitti wall.">
+        <div class="johnpic">
+          <img class="images" src="images/john.jpg" alt="Image of a black man in a pink and blue stripped shirt making a funny face while standing against a graffitti wall.">
+        </div>
         <div class="johninfo">
           <h2>John Doe</h2>
           <h3>CEO and Co-Owner</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vitae rerum consectetur neque ullam assumenda temporibus corrupti! Possimus assumenda ex consectetur eveniet saepe, repudiandae alias est dolore fuga architecto corrupti?</p>
         </div>
       
-       
-        <img class="bobpic" src="images/bob.jpg" alt="Image of a middle-eastern man with glasses, with an interior brick wall in the background.">
+       <div class="bobpic">
+        <img class="images" src="images/bob.jpg" alt="Image of a middle-eastern man with glasses, with an interior brick wall in the background.">
+        </div>
         <div class="bobinfo">
           <h2>Bob Rite</h2>
           <h3>CFO and Co-Owner</h3>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas a ad perspiciatis, qui voluptatibus quibusdam, eos quaerat voluptatem in, minima magni ut quis obcaecati laborum facere est. Impedit, minus illum.</p>
         </div>
-      
-      
     </section>
 
 
@@ -160,39 +165,68 @@
       </div>
       
     </section> -->
-    <section>
-      <h1>Contact Us</h1>
-      <h2>Send Us A Message</h2>
+    
+      <!-- <h2>Send Us A Message</h2>
       <p>Full Name</p>
       <input type="text">
       <p>Email</p>
       <input type="text">
       <p>Message</p>
       <input type="text">
-      <button>Send</button>
-      <h2>Hours Of Operation</h2>
-      <table>
-        <thead>Days</thead>
-        <tr>
-          <th>Monday-Friday</th>
-          <th>Saturday-Sunday</th>
-        </tr>
-        <thead>Hours</thead>
-        <tbody>
-        <tr>
-          <td>9 AM - 6PM</td>
-          <td>Closed</td>
-        </tr>
-        <tr>
-        </tbody>
-          
-        </tr>
-       
-      </table>
-      <h2>Location</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95780.65560410511!2d2.0701491970298576!3d41.392646714799575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona%2C%20Spain!5e0!3m2!1sen!2sca!4v1690565855803!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <button>Send</button> -->
+      <h1>Contact Us</h1>
+      <section class="info">
+    
+    <div class="inputforms">
+      <form action="contact.html" class="fullname">
+        <label for="fullname">Full Name</label>
+        <input type="text">
+      </form>
+      <form action="contact.html" class="email">
+        <label for="email"text">
+      </form>
+      <form action="contact.html" method="post" class="message">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" >Messages</textarea>
+      </form>
 
+      <button>Send</button>
+    </div>
+
+  
+      <div class="themap">
+        <h2>Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95780.65560410511!2d2.0701491970298576!3d41.392646714799575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona%2C%20Spain!5e0!3m2!1sen!2sca!4v1690565855803!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="hours">
+      <h2>Hours Of Operation</h2>
+
+      <!-- Table Try 2 -->
+      <table class="hourstable">
+        <thead>
+          <tr>
+            <th>Days</th>
+            <th>Hours</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday-Friday</td>
+            <td>9 AM - 6 PM</td>
+            
+          </tr>
+          <tr>
+            <td>Saturday-Sunday</td>
+            <td>Closed</td>
+            
+          </tr>
+        </tbody>
+      </table>
+    </div>
     </section>
+    </div>
 
 
   </main>
