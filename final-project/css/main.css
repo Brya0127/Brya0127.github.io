@@ -22,6 +22,19 @@ ul{
   display: flex;
   flex-wrap: wrap;
 }
+
+header nav {}
+
+header nav ul a:link, header nav ul a:visited {
+  color: #c68d00;
+  text-decoration: none;
+}
+header nav ul a:hover, header nav ul a:active {
+  /* font-size: large; */
+  background-color: #c68d00;
+  color: #000000;
+  /* text-decoration: underline; */
+}
 /* searchbar should be flex too  */
 
 
