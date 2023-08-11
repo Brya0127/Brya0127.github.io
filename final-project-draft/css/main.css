@@ -1,0 +1,349 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+/* add open sans google font  */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+header{
+  background-color: #222222;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 2em;
+  width: 100%;
+}
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+nav {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+}
+ul {
+  text-align: center;
+}
+
+ul li {
+  padding: 0.5em;
+}
+
+header nav ul a:link, header nav ul a:visited {
+  color: #c68d00;
+  text-decoration: none;
+}
+header nav ul a:hover, header nav ul a:active {
+  background-color: #c68d00;
+  color: #000000;
+}
+/* searchbar should be flex too  */
+
+
+.hero-section-home {
+    background-image: url("https://brya0127.github.io/final-project/images/main-banner.jpg");
+    background-position: 50%;
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.banner-overlay {
+  background-color: #00000070;
+}
+
+.banner-overlay h1 {
+  color: white;
+  font-size: 125px;
+}
+
+.banner-overlay h1 {
+  color: white;
+  margin: 20px;
+}
+
+.banner-overlay p {
+  padding: 1em;
+  color: white;
+}
+
+.connect {
+  color: black;
+  background-color: #c68d00;
+  font-size: 2em;
+  padding: 1em;
+  border: none;
+  margin: 20px;
+}
+
+.about {
+  object-fit: contain;
+}
+
+.about img {
+  width: 100%;
+  padding: 2em;
+}
+
+.about-text {
+  padding: 2em;
+}
+
+h1 h2 h3 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+p {
+  font-size: 24pt;
+}
+
+.images {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.servcont {
+  max-width: 100%;
+  margin: 0, auto;
+}
+
+.service {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: ;
+  align-content: center;
+}
+
+.servbut {
+  background-color: #000000; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 60px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.servbut a:link, header nav ul a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.about {
+  background-color: #ffe6ac;
+}
+
+.servcont {
+  padding: 2em;
+}
+
+.servcont p {
+  margin-top: 0.5em;
+}
+
+.servbut {
+  padding: 1em;
+}
+
+.transform {
+  background-color: #ffe6ac;
+  margin: 1em;
+  object-fit: cover;
+}
+
+.transform img {
+  width: 100%;
+}
+
+.marketing {
+  background-color: #ffe6ac;
+  margin: 1em;
+}
+
+.marketing img {
+  width: 100%;
+}
+
+.vidpro {
+  background-color: #ffe6ac;
+  margin: 1em;
+}
+
+.vidpro img {
+  width: 100%;
+}
+
+.webdev {
+  background-color: #ffe6ac;
+  margin: 1em;
+}
+
+.webdev img {
+  width: 100%;
+}
+
+.print {
+  background-color: #ffe6ac;
+  margin: 1em;
+}
+
+.print img {
+  width: 100%;
+}
+
+.vision {
+  background-image: url(../images/vision.jpg);
+  background-repeat: no-repeat;
+  color: white;
+  background-position: center;
+  background-size: cover;
+  /* align-content: center;
+  justify-content: center; */
+}
+.vision-text {
+  padding: 3em;
+}
+.vision-text p {
+  padding: 1em;
+}
+.learn {
+  color: white;
+  background-color: #142338;
+  border: 2px solid #c68d00;
+  padding: 15px 60px;
+  
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.johnpic {
+  width: 100%;
+}
+
+.johninfo {
+  background-color: #ffe6ac;
+  padding: 2em;
+  margin-bottom: 1em;
+}
+.johnheading {
+  padding-bottom: 1em;
+  
+}
+
+.bobpic {
+  width: 100%;
+}
+
+.bobinfo {
+  background-color: #ffe6ac;
+  padding: 2em;
+  margin-bottom: 1em;
+}
+
+.info {
+  margin-left: 1em;
+}
+.info h2 {
+  padding-top: 1em;
+  padding-left: 12px;
+}
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #222222;
+  color: #c68d00;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #c68d00;
+  color: #000000;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+
+/* #name {
+  width: 850px;
+}
+
+#email {
+  width: 850px;
+}
+
+#message {
+  width: 850px;
+  height: 150px;
+} */
+
+
+/* Style the table */
+table {
+  border-collapse: separate;
+  border-spacing: 2;
+  width: 100%;
+  border: 2px solid #000000;
+}
+tr {
+  border: 2px solid #000000;
+}
+/* Style table headers and table data */
+th, td {
+  border: 1px solid #000000;
+  text-align: center;
+  padding: 16px;
+}
+
+#schedule {
+  background-color: #ffe6ac;
+}
+
+.themap {
+  margin-bottom: 2em;
+}
+
+footer {
+  background-color: #000000;
+  color: #c68d00;
+  height: 125px;
+  justify-self: center;
+}
