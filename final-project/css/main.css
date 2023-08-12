@@ -114,6 +114,10 @@ h4 {
     grid-column: 3 / 5;
   }
 
+  .services-headers h3 {
+    font-size: 1.5em;
+  }
+
   .print {
     background-color: #ffe6ac;
     grid-row: 2 / 3;
