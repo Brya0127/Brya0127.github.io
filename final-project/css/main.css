@@ -244,6 +244,10 @@ header nav ul a:hover, header nav ul a:active {
   flex: 1;
 }
 
+.searchbutton {
+  margin-bottom: 10px;
+}
+
 .welcome-banner {
   background-image: url(../images/main-banner.jpg);
   background-position: 50%;
