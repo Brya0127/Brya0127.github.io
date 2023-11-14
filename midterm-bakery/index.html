@@ -9,15 +9,134 @@
 </head>
 
 <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Bakery Name</title>
+    <link rel="stylesheet" href="css/reset.css"> <!-- Link to your CSS file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
 
-  <header>
+    
+
+    <!-- Header Section -->
+    <header class="tartheader">
+      
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-lg">
+            <a class="navbar-brand" href="#home">
+              <img class="brand-logo" src="images/AFT-logo-150_x_150.png" alt="cirtus logo">
+              <img class="brand-text" src="images/a-fresh-tart-text-312_x_104.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#store">Store</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#treats">Treats</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Container with max width of 960px -->
+        <div class="container">
+
+            <!-- Banner Section -->
+            <section class="banner bg-opacity-75">
+                <!-- <img src="banner-image.jpg" alt="Fresh Tart Banner"> -->
+                <div>
+                    <h1>It's Time For A Fresh Tart!</h1>
+                    <p>We're expanding! Introducing our brand new Bake It Yourself Pastries! Frozen and shipped to you, anywhere. Now everyone can have a taste without leaving the comfort of your home. I hope you love them as much as we do!</p>
+                </div>
+            </section>
+
+            <!-- Carousel Section -->
+            <!-- <section class="carousel">
+                <div class="carousel-inner">
+                    <img src="image1.jpg" alt="Image 1">
+                    <img src="image2.jpg" alt="Image 2">
+                    <img src="image3.jpg" alt="Image 3">
+                    <img src="image4.jpg" alt="Image 4">
+                    <img src="image5.jpg" alt="Image 5">
+                </div>
+            </section> -->
+                <!-- Add your carousel code here -->
+            </section>
+
+            <!-- Grid Section -->
+            <section class="home-grid">
+                <div class="grid-item">
+                    <div>
+                        <h1>Product 1</h1>
+                        <p>Description of Product 1.</p>
+                    </div>
+                    <div class="product-image">
+                      <img src="product1.jpg" alt="Product 1 Image">
+                    </div>
+                    
+                </div>
+                <!-- Repeat for the other grid items -->
+            </section>
+
+        </div> <!-- End Container -->
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="treats.html">Treats</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p>&copy; A Fresh Tart 2023. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+
+  <!-- <header>
     <div class="logo">
       <img src="images/logo.png" alt="Three white stars on an orange background.">
     </div>
     
     <div class="break"></div> 
-    <!-- Had to include this break method to create new row. -->
+    Had to include this break method to create new row.
     <nav>
+      <ul role="list" class="skip-links">
+        <li role="listitem"><a href="#nav" aria-label="Skip to the main navigation">Skip to main nav</a></li>
+        <li role="listitem"><a href="#main" aria-label="Skip to the main content">Skip to main content</a></li>
+    </ul>    
+
       <ul>
         <li><a href="index.html" id="home-button">Home</a></li>
         <li><a href="about.html">About Us</a></li>
@@ -28,7 +147,6 @@
     </nav>
 
 
-  </header>
 
   <main>
 
@@ -36,6 +154,7 @@
   
   <footer>
 
-  </footer>
+  </footer> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

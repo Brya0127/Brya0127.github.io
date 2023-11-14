@@ -1,0 +1,228 @@
+.skip-link {     color: #72009F; /* same color as background */  
+  background-color: #72009F; width: 100%;   text-decoration: none;  }  .SkipNav:active, .SkipNav:focus {     /* Becomes visible & underlined         when user tabs to it.        :active pseudo-class necessary for IE        :focus pseudo-class necessary for Mozilla      */     color: #0000FF;      text-decoration: underline;  }
+
+
+/* Reset some default margin and padding */
+/* body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  font-family: 'Arial', sans-serif; /* Change the font family as needed */
+}
+
+/* Header styles */
+header {
+  background-color: #72009F;
+}
+
+main {
+  /* background-color: white; */
+  background: white url(../images/toa-heftiba-S1Z_Cudra0k-unsplash.jpg) no-repeat center;
+  background-size: cover;
+}
+
+/* .container {
+  
+} */
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #FFFFFF; /* Header link color */
+  font-size: 36px;
+}
+
+/* Main content styles */
+.container {
+  max-width: 75%;
+  margin: 0 auto;
+  background-color: #F0F1EC;
+  padding: 20px;
+  background: white url(../images/toa-heftiba-S1Z_Cudra0k-unsplash.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Banner styles */
+.banner {
+  background-color: #3A0052; opacity: 66%;
+  /* position: relative; */
+}
+
+.banner h1, p {
+  opacity: 1;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+.banner div {
+  /* position: absolute;
+  top: 50%; */
+
+  /* Above is GPT css that I prob wont use */
+
+  /* Carousel container styles */
+}
+.carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Keyframe animations for the carousel */
+@keyframes carousel {
+  0%, 100% {
+      transform: translateX(0);
+  }
+  20% {
+      transform: translateX(0);
+  }
+  25% {
+      transform: translateX(-100%);
+  }
+  45% {
+      transform: translateX(-100%);
+  }
+  50% {
+      transform: translateX(-200%);
+  }
+  70% {
+      transform: translateX(-200%);
+  }
+  75% {
+      transform: translateX(-300%);
+  }
+  95% {
+      transform: translateX(-300%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+/* Individual image styles */
+.carousel img {
+  width: 100%;
+  height: auto;
+  float: left;
+}
+
+/* Apply the animation to the carousel */
+.carousel-inner {
+  display: flex;
+  animation: carousel 15s infinite; /* Adjust the duration as needed */
+}
+
+/* Hamburger Menu CSS */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif; /* Change the font family as needed */
+}
+
+/* Hamburger menu button styles */
+.menu-btn {
+  display: none;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 6px 0;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* Navigation menu styles */
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 15px;
+}
+
+.nav-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  display: inline;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Media query to make the menu responsive */
+@media screen and (max-width: 768px) {
+  .menu-btn {
+      display: block;
+  }
+
+  .menu-toggle:checked + .menu-btn .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .menu-toggle:checked + .menu-btn .bar:nth-child(2) {
+      opacity: 0;
+  }
+
+  .menu-toggle:checked + .menu-btn .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .nav-menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .menu-toggle:checked + .menu-btn + .nav-menu {
+      display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  
+.h1, h1, p {
+    font-size: 2.5rem;
+    color: white;
+}
+}
+
+.brand-logo img{
+  width: 100px;
+}
+.navbar {
+  background-color: #72009F;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* .container {
+  background: white;
+  background-size: cover;
+} */
