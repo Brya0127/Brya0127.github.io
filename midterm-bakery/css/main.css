@@ -217,15 +217,6 @@ Media query to make the menu responsive */
   }
 } */
 
-@media screen and (min-width: 1200px) {
-
-  
-/* .h1, h1, p {
-    font-size: 1.5rem;
-    color: white;
-} */
-}
-
 .brand-logo img{
   width: 100px;
 }
@@ -243,6 +234,10 @@ body {
   grid-template-columns: repeat(2,1fr);
   grid-template-rows: repeat(2,1fr);
   grid-gap: 1em;
+}
+
+.hidden {
+  display: none;
 }
 
 .grid-item {
@@ -265,6 +260,126 @@ body {
 .product-image img {
   height: 100%;
   width: 100%;
+}
+
+.store-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 2em;
+  /* grid-template-rows: repeat(4,1fr); */
+  /* grid-template-areas:
+  "filter filter"
+  "item1 item 2"
+  "item3 item 4"
+  "item5 item6"; */
+}
+
+.filter {
+  color: #3A0052;
+  grid-column: 1 / 3;
+  padding: 2em;
+}
+
+.addcart {
+  font-size: 2em;
+  position: relative;
+  top: -150px;
+  left: 150px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+
+.grid-buy:hover {
+  /* border-radius: 50%; */
+  /* box-shadow:
+    -10px 0 80px #f44336,
+    10px 0 80px #f44336; */
+  animation-name: Pulse;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  transition-timing-function: ease-in-out;
+}
+
+@keyframes Pulse {
+  0% {
+    transform: scale(1)
+  }
+  50% {
+    transform: scale(1.05)
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.contact-grid {
+  margin-top: 3em;
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: 1fr;
+  /* grid-template-rows: repeat(3,1fr); */
+  grid-gap: 3em;
+}
+
+.about-us {
+  /* display: flex; */
+  /* height: 350px; */
+  background-color: rgb(235, 238, 247);  
+  padding: 2em;
+}
+
+/* .about-content {
+  height: auto;
+} */
+
+/* deletes hours of operation content */
+/* .hours-wrapper {
+  height: 150px;
+  background-color: rgb(235, 238, 247);  
+  padding: 2em;
+  margin-bottom: 2em;
+}
+
+.hours-wrapper h2 {
+  color: black;
+}
+.hours-table {
+  margin-bottom: 2em;
+  padding: 2em;
+} */
+
+.about-us p {
+  color: black;
+}
+
+.contact-us {
+  background-color: rgb(235, 238, 247);
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-items: space-around;
+}
+
+.contact-us h2 {
+  color: black;
+}
+
+#fname {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#email {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#message {
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .nav-bar-nav {
@@ -291,3 +406,45 @@ a {
 a:hover {
   color: #1CFF00;
 }
+
+
+@media screen and (min-width: 1200px) {
+
+  .store-grid {
+    margin: 2em;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+  }
+  .filter {
+    display: none;
+  }
+
+  .addcart {
+    font-size: small;
+    left: 75px;
+    /* bottom: ; */
+    top: -55px
+
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .home-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+  }
+
+  .hidden {
+    display: block;
+
+  }
+
+  .hidden p, button {
+    color: black;
+  }
+  }

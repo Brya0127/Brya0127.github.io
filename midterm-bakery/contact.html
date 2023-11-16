@@ -35,10 +35,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link text-light active" aria-current="page" href="#home">Home</a>
+                  <a class="nav-link text-light active" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="#store">Store</a>
+                  <a class="nav-link text-light" href="store.html">Store</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-light" href="#treats">Treats</a>
@@ -47,7 +47,7 @@
                   <a class="nav-link text-light" href="#blog">Blog</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="#contact">Contact</a>
+                  <a class="nav-link text-light" href="contact.html">Contact</a>
                 </li>
               </ul>
                 </button>
@@ -74,19 +74,60 @@
             <!-- Grid Section -->
             <section class="contact-grid"> <!-- One Row Two Columns No Gutters-->
               <div class="about-us">
-                <h1> </h1>
-                <p> </p>
-                <ul>
-                  <!-- add owner info and add itemprop schema -->
-                </ul>
+                <div class="about-content">
+                  <h1>It was time for A Frest Tart</h1>
+                  <p>After Trudy was widowed and her whole life turned upside down, she decided it was time for a fresh start.
+                    Trudy had always loved baking, a skill that she learned at her grandfather's side from the time she was old enough to climb a stoll and wield a whisk. Her wife had always suggested she open a bakery, but Trudy considered it a bit of a pipe dream. But after recovering from her loss, she decided life is too short and unpredictable to make choices that don't fullfill you. With that epiphany in mind, it became her mission to open a bakery and pursue her passion.
+                  </p>
+                  <ul itemscope itemtype="https://schema.org/Person">
+                    <li itemprop="name">Trudy Pravity</li>  
+                    <li itemprop="jobTitle">Owner of A Fresh Tart</li>
+                    <li itemprop="email">trudy@afreshtart.com</li>
+                    <li itemprop="address">963 Wellington Ave, Ottawa, ON.</li>
+                  </ul>
+                </div>
               </div>
 
               <div class="contact-us">
-                <div class="contact-form">
-                  <!-- add the form fields and buttons -->
-                </div>
-
+                <h2>Send Us A Message</h2>
+                <!-- <form action="action_page.php"> -->
+              
+                  <label for="fname">Full Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="email">Email</label>
+                  <input type="text" id="email" name="email" placeholder="Your Email..">
+              
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Send">
+              
+                <!-- </form> -->
               </div>
+
+              <!-- screw the Hours -->      
+              <!-- <div class="hours-wrapper">
+                <h2>Hours of Operation</h2>
+                <table class="hours-table">
+                
+                  <tr id="schedule">
+                    <th>Days</th>
+                    <th>Hours</th>
+                  </tr>
+                
+                  <tr>
+                    <td>Monday-Friday</td>
+                    <td>9 AM - 6 PM</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Saturday-Sunday</td>
+                    <td>Closed</td>
+                  </tr>
+      
+                </table>
+              </div> -->
 
             </section>
 
